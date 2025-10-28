@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>NotGoogl</title>
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">      
+    </head>
+    
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand">
+                        <i class="bi bi-eye-fill"></i>
+                        <span>NotGoogl</span>
+                    </a>
+                </div>
+            </nav>
+            
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <h1 class="text-white text-center">NotGoogl Search</h1>
+
+                            <h6 class="text-center"><div id="div_text"></div></h6>
+                            
+
+                            <form method="get" class="custom-form mt-4 pt-2 mb-lg-0 mb-5" role="search">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text bi-search" id="basic-addon1">
+                                        
+                                    </span>
+
+                                    <input name="keyword" type="search" class="form-control" id="keyword" placeholder="" aria-label="Search">
+
+                                    <a href="./results/"><button type="button" class="form-control" id="clicky">Search</button></a>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="featured-section">
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                            <div class="custom-block bg-white shadow-lg">
+                                <a href="topics-detail.html">
+                                    <div class="d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Trending Now on NotGoogl:</h5>
+
+                                            <p class="mb-0">
+                                                <p id="trending">Loading...</p>
+                                                <p id="trending2">Loading...</p>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <img src="images\opentabs.svg" class="custom-block-image img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-block custom-block-overlay">
+                                <div class="d-flex flex-column h-100">
+                                    <img src="images/background.jpg" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-overlay-text d-flex">
+                                        <div>
+                                            <div class="weather-widget" id="weather">
+                                                <h2>Local Weather <span id="weather-icon">☀️</span></h2></h2>
+                                                <p id="temp">Loading...</p>
+                                                <p id="wind"></p>
+                                                <p id="humidity"></p>
+                                                <p id="chance"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="social-share d-flex">
+                                        <a href="#" class="custom-icon bi bi-eye ms-auto"></a>
+                                    </div>
+
+                                    <div class="section-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+        </main>
+
+<footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mb-4 pb-2">
+                        <a class="navbar-brand mb-2" href="index.html">
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/navigation.js"></script> 
+        <script src="js/trending.js"></script> 
+        <script src="js/accurate-weather.js"></script>          
+        <script src="js/text-rotation.js"></script> 
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
