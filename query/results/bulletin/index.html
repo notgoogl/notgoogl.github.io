@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Missing Persons Bulletin</title>
+<link href="style2.css" rel="stylesheet">  
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+<header>
+    MISSING PERSONS BULLETIN — Federal Bureau of Investigation
+</header>
+
+<main>
+    <div class="case">
+        <h2 onclick="toggleDetails(this)">Jordan Whitaker</h2>
+        <p class="summary">Age: 34 | Last Seen: August 3, 2023 — Hollowridge Township</p>
+        <div class="details">
+            <p class="note-title">Summary:</p>
+            <p>Whitaker, a part-time mechanic and musician, was last seen leaving her workshop late at night. CCTV footage shows her pausing at the end of the street, staring upward for approximately two minutes before walking out of frame. Her phone was recovered in an empty parking lot the next morning, displaying an unsent message draft that read only, "I think it's calling again."</p>
+            <p class="note-title">Relevant Notes:</p>
+            <ul>
+                <li>Lost her partner in an apartment fire one year prior.</li>
+                <li>Generally social at work, only occasionally works late alone.</li>
+                <li>No reported compulsions or recurring dreams in recent months.</li>
+            </ul>
+            <p>Status: Missing — suspicious circumstances.</p>
+            <img src="../../images/person2.jpg"></img>
+        </div>
+    </div>
+
+    <div class="case">
+        <h2 onclick="toggleDetails(this)">Riley Harper</h2>
+        <p class="summary">Age: 12 | Last Seen: March 15, 2024 — Maplewood Neighborhood</p>
+        <div class="details">
+            <p class="note-title">Summary:</p>
+            <p>Riley, a middle school student, went missing while playing in a local park. Her backpack was found under a slide the following morning. Search parties were conducted but yielded no additional clues.</p>
+            <p class="note-title">Relevant Notes:</p>
+            <ul>
+                <li>No history of personal tragedy beyond normal childhood events.</li>
+                <li>Known to spend time with friends; very social.</li>
+                <li>No compulsions, unusual dreams, or obsessive behaviors reported.</li>
+            </ul>
+            <p>Status: Missing — ongoing investigation.</p>
+            <img src="../../images/person6.jpg"></img>
+        </div>
+    </div>
+
+    <div class="case">
+        <h2 onclick="toggleDetails(this)">Casey Liu</h2>
+        <p class="summary">Age: 10 | Last Seen: July 22, 2024 — Elm Street, Riverside District</p>
+        <div class="details">
+            <p class="note-title">Summary:</p>
+            <p>Casey was last seen attending a neighborhood summer program. Parents reported him missing the next morning when he failed to return home. Authorities have been investigating, but there is no evidence of foul play.</p>
+            <p class="note-title">Relevant Notes:</p>
+            <ul>
+                <li>Healthy and socially active; enjoys group activities.</li>
+                <li>No personal trauma or isolation reported.</li>
+                <li>No recurring dreams or compulsive tendencies.</li>
+            </ul>
+            <p>Status: Missing — ongoing investigation.</p>
+            <img src="../../images/person4.jpg"></img>
+        </div>
+    </div>
+
+    <div class="case">
+        <h2 onclick="toggleDetails(this)">Taylor Greene</h2>
+        <p class="summary">Age: 19 | Last Seen: September 27, 2024 — Abandoned rest stop off Route 41</p>
+        <div class="details">
+            <p class="note-title">Summary:</p>
+            <p>Greene, a reclusive amateur photographer, vanished during a solo road trip through rural counties. His last uploaded photo, timestamped 11:42 p.m., shows a dim silhouette in the distance beyond their car headlights. Investigators could not verify the subject's presence at the scene when they arrived.</p>
+            <p class="note-title">Relevant Notes:</p>
+            <ul>
+                <li>History of compulsive late-night photography.</li>
+                <li>Minor academic setback; recently expelled from university.</li>
+                <li>Travels occasionally with friends; not consistently alone.</li>
+                <li>No significant personal tragedy reported.</li>
+            </ul>
+            <p>Status: Missing — ongoing investigation.</p>
+            <img src="../../images/person3.jpg"></img>
+        </div>
+    </div>
+
+    <div class="case">
+        <h2 onclick="toggleDetails(this)">Alex Monroe</h2>
+        <p class="summary">Age: 27 | Last Seen: June 12, 2024 — Cragmoor County, Forest Access Road 19</p>
+        <div class="details">
+            <p class="note-title">Summary:</p>
+            <p>Monroe, a graduate student in folklore and anthropology, was reported missing after failing to return from a solo research trip documenting regional myths related to "shadows that move." Monroe's car was later discovered near an unmarked trailhead, doors locked, personal effects inside, footprints leading into the treeline.</p>
+            <p class="note-title">Relevant Notes:</p>
+            <ul>
+                <li>Reported vivid dreams and auditory disturbances in the weeks prior.</li>
+                <li>Known for deep fixation on local legends and isolationist tendencies.</li>
+                <li>Family reports recent personal tragedy involving the death of a sibling.</li>
+            </ul>
+            <p>Status: Missing — presumed lost in wilderness.</p>
+            <img src="../../images/person1.jpg"></img>
+        </div>
+    </div>
+
+    <div class="case">
+     <h2 onclick="toggleDetails(this)">Samira Patel</h2>
+        <p class="summary">Age: 7 | Last Seen: May 10, 2024 — Willow Creek Elementary</p>
+        <div class="details">
+            <p class="note-title">Summary:</p>
+            <p>Samira was last seen leaving school at the end of the day. Teachers and parents reported her missing when she never returned home. Local authorities conducted searches in the surrounding area with no results.</p>
+            <p class="note-title">Relevant Notes:</p>
+            <ul>
+                <li>No history of personal trauma beyond normal childhood experiences.</li>
+                <li>Spends time mostly with classmates and family; highly social.</li>
+                <li>No compulsions, unusual dreams, or obsessive behaviors reported.</li>
+            </ul>
+            <p>Status: Missing — ongoing investigation.</p>
+            <img src="../../images/person5.jpg"></img>
+        </div>
+    </div>
+</main>
+
+<footer>
+    If you have any information regarding the whereabouts of the above individuals, please contact the FBI or your local authorities.
+</footer>
+
+<script>
+function toggleDetails(element) {
+    const details = element.nextElementSibling.nextElementSibling;
+    if (details.style.display === "block") {
+        details.style.display = "none";
+    } else {
+        details.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
